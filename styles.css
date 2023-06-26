@@ -1,0 +1,103 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background: rgb(85, 105, 220);
+    height: 10vh;
+    display: flex;
+    align-items: top;
+    justify-content: flex-start;
+    padding-left: 20px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+section {
+    height: 67vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#about {
+    background: white;
+}
+
+#education {
+    background: white;
+}
+
+#skills {
+    background: white;
+}
+
+section#portfolio {
+    display: flex;
+    height: 70vh;
+    background-color: rgb(85, 105, 220);
+}
+
+.portfolio-image {
+    width: 66.66%;
+    background-image: url('./images.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.image-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+}
+
+.portfolio-content {
+    width: 33.33%;
+    background-color: rgb(85, 105, 220);
+    padding: 20px;
+    color: white;
+}
+
+.portfolio-content p {
+    margin-bottom: 10px;
+}
+
+.portfolio-content a {
+    color: white;
+    text-decoration: none;
+}
+
+.portfolio-content .btn {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background: white;
+    color: rgb(85, 105, 220);
+    border: none;
+    cursor: pointer;
+}
+
+.bold {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
