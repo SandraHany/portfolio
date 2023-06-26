@@ -1,3 +1,11 @@
+@media (max-width: 768px) {
+
+    .education-column,
+    .experience-column {
+        width: 100%;
+    }
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -54,22 +62,23 @@ section#portfolio {
 }
 
 .portfolio-image {
-    width: 66.66%;
-    background-image: url('./images.jpeg');
+    width: 50%;
+    background-image: url('./images-2.jpeg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     position: relative;
-    overflow: hidden;
+
+    height: 85%;
 }
 
 .image-overlay {
-    position: absolute;
+    position: relative;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
-    color: white;
+    color: rgb(85, 105, 220);
 }
 
 .portfolio-content {
@@ -84,7 +93,7 @@ section#portfolio {
 }
 
 .portfolio-content a {
-    color: white;
+    color: rgb(85, 105, 220);
     text-decoration: none;
 }
 
@@ -97,7 +106,159 @@ section#portfolio {
     cursor: pointer;
 }
 
+
 .bold {
     font-weight: bold;
     font-size: 1.5rem;
+}
+
+.about-container {
+    background-color: rgb(214, 196, 228);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    /* Add top padding */
+}
+
+.about-content {
+    width: 66.66%;
+    text-align: left;
+    padding-left: 50px;
+    /* Increase the left padding value as needed */
+}
+
+.section-title {
+    font-size: 28px;
+    font-family: "Papyrus", sans-serif;
+    font-weight: bold;
+    color: rgb(85, 105, 220);
+    margin-bottom: 10px;
+}
+
+.about-description {
+    font-size: 18px;
+    line-height: 1.5;
+    color: black;
+}
+
+.section-sub-title {
+    font-family: "Copperplate", sans-serif;
+    color: rgb(161, 126, 186);
+    margin-bottom: 20px;
+    /* Add bottom margin after "My Background" */
+}
+
+#education {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.education-column,
+.experience-column {
+    background-color: white;
+    padding: 20px;
+    text-align: left;
+    width: 100%;
+    max-width: 400px;
+}
+
+
+
+
+.school-name,
+.job-date {
+    font-weight: bold;
+}
+
+.certificate-button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background: white;
+    color: rgb(85, 105, 220);
+    border: 1px solid rgb(85, 105, 220);
+    cursor: pointer;
+}
+
+.education-details {
+    margin-bottom: 80px;
+}
+
+.experience-details {
+    margin-bottom: 50px;
+}
+
+#skills {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+
+.skills-container {
+
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    gap: 20px;
+
+
+}
+
+.skills-big-container {
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    padding-top: 20px;
+    flex-direction: column;
+    /* Add top padding */
+}
+.skill {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.skill-title {
+    margin-bottom: 0;
+}
+
+
+
+
+
+
+#footer {
+    background-color: rgb(85, 105, 220);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    height: 20vh;
+}
+
+.footer-text {
+    font-family: cursive;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    padding-left: 200px;
+}
+
+.footer-right {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 200px;
+}
+
+.footer-right a {
+    margin-left: 50px;
+}
+
+.footer-right img {
+    height: 24px;
+    width: 24px;
 }
