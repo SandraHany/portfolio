@@ -3,7 +3,11 @@
         flex-direction: column; /* Set flex-direction to column in mobile view */
     }
 }
-
+@media (max-width: 767px) {
+    #skills {
+        padding-left: 0;
+    }
+}
 body {
     margin: 0;
     padding: 0;
