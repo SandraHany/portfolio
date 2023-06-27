@@ -1,9 +1,6 @@
-@media (min-width: 768px) {
-
-    .education-column,
-    .experience-column {
-        flex-basis: calc(50% - 20px);
-        /* Set the initial width to 50% minus the gap */
+@media (max-width: 767px) {
+    #education-experience {
+        flex-direction: column; /* Set flex-direction to column in mobile view */
     }
 }
 
@@ -64,7 +61,7 @@ section#portfolio {
 
 .portfolio-image {
     width: 50%;
-    background-image: url('./images/images-2.jpeg');
+    background-image: url('./images/portfolio-website-laptop-screen-3d-rendering_72104-3535.jpg.webp');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -163,9 +160,10 @@ section#portfolio {
     padding: 20px;
     text-align: left;
     max-width: 400px;
-    flex: 1 1 50%;
-    /* Use flexbox to allocate 50% width to each column */
+    flex: 1 1 100%; /* Change the flex value to 100% */
+    margin-bottom: 20px; /* Add margin-bottom */
 }
+
 
 
 
@@ -197,13 +195,13 @@ section#portfolio {
     margin-top: 0;
     margin-bottom: 0;
     display: flex;
+    flex-wrap: wrap; /* Add this property */
     justify-content: flex-start;
-    /* Align content to the left */
     align-items: flex-start;
-    /* Align items to the top */
     padding-left: 50px;
     margin-bottom: 50px;
 }
+
 
 
 .skills-container {
@@ -278,6 +276,8 @@ section#portfolio {
 .footer-right img {
     height: 24px;
     width: 24px;
+    border-radius: 50%; 
+    overflow: hidden;
 }
 .logos-intro{
     display: flex;
