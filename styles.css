@@ -1,8 +1,9 @@
-@media (max-width: 768px) {
+@media (min-width: 768px) {
 
     .education-column,
     .experience-column {
-        width: 100%;
+        flex-basis: calc(50% - 20px);
+        /* Set the initial width to 50% minus the gap */
     }
 }
 
@@ -149,7 +150,7 @@ section#portfolio {
     /* Add bottom margin after "My Background" */
 }
 
-#education {
+#education-experience {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -161,9 +162,11 @@ section#portfolio {
     background-color: white;
     padding: 20px;
     text-align: left;
-    width: 100%;
     max-width: 400px;
+    flex: 1 1 50%;
+    /* Use flexbox to allocate 50% width to each column */
 }
+
 
 
 
@@ -193,6 +196,13 @@ section#portfolio {
 #skills {
     margin-top: 0;
     margin-bottom: 0;
+    display: flex;
+    justify-content: flex-start;
+    /* Align content to the left */
+    align-items: flex-start;
+    /* Align items to the top */
+    padding-left: 50px;
+    margin-bottom: 50px;
 }
 
 
@@ -200,7 +210,7 @@ section#portfolio {
 
     display: flex;
     flex-direction: column;
-    align-items: left;
+    align-items: flex-start;
     gap: 20px;
 
 
@@ -208,16 +218,18 @@ section#portfolio {
 
 .skills-big-container {
     display: flex;
-    justify-content: left;
-    align-items: left;
+    justify-content: flex-start;
+    align-items: flex-start;
     padding-top: 20px;
     flex-direction: column;
+    padding-left: 220px;
     /* Add top padding */
 }
+
 .skill {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 20px;
 }
 
 .skill-title {
@@ -230,13 +242,18 @@ section#portfolio {
 
 
 #footer {
+    
     background-color: rgb(85, 105, 220);
     color: white;
+    position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
     height: 20vh;
+    bottom: 0;
+    left: 0;
+    width: 100%;
 }
 
 .footer-text {
