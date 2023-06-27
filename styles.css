@@ -3,11 +3,25 @@
         flex-direction: column; /* Set flex-direction to column in mobile view */
     }
 }
-@media (max-width: 767px) {
-    #skills {
-        padding-left: 0;
+@media (max-width: 768px) {
+    .portfolio-image {
+        width: 100%; /* Set the image width to 100% in mobile view */
+        height: auto; /* Allow the image to scale proportionally */
     }
 }
+@media (max-width: 767px) {
+    /* ... existing styles ... */
+
+    #skills {
+        padding-left: 0px; /* Adjust the left padding as needed */
+        margin-left: 0; /* Remove the left margin */
+    }
+
+    .skills-big-container {
+        padding-left: 20px; /* Adjust the left padding as needed */
+    }
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -209,14 +223,14 @@ section#portfolio {
 
 
 .skills-container {
-
+    display: grid;
+    grid-template-columns: 1fr 0.5fr; /* Two columns, adjust as needed */
+    grid-gap: 60px; /* Adjust the gap between columns */
+  }
+  .buttons-column {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    gap: 20px;
-
-
-}
+  }
 
 .skills-big-container {
     display: flex;
@@ -232,10 +246,12 @@ section#portfolio {
     display: flex;
     align-items: center;
     gap: 20px;
+    margin-bottom: 20 0;
 }
 
 .skill-title {
-    margin-bottom: 0;
+    margin-bottom: 10;
+    white-space: nowrap;
 }
 
 
