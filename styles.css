@@ -268,7 +268,7 @@ section#portfolio {
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    padding-right: 200px;
+    padding-right: 150px;
 }
 
 .footer-right a {
@@ -278,4 +278,10 @@ section#portfolio {
 .footer-right img {
     height: 24px;
     width: 24px;
+}
+.logos-intro{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 100px;
 }
