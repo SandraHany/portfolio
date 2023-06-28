@@ -1,27 +1,56 @@
-@media (max-width: 767px) {
-    #education-experience {
-        flex-direction: column; /* Set flex-direction to column in mobile view */
+  @media only screen and (max-width: 600px) {
+    section#portfolio {
+      display: flex;
+      flex-direction: column;
+      height: auto;
+      background-color: rgb(85, 105, 220);
+      align-items: center;
     }
-}
-@media (max-width: 768px) {
+  
     .portfolio-image {
-        width: 100%; /* Set the image width to 100% in mobile view */
-        height: auto; /* Allow the image to scale proportionally */
+      width: 100%;
+      height: 50vh;
     }
-}
-@media (max-width: 767px) {
-    /* ... existing styles ... */
-
+  
+    .portfolio-content {
+      width: 100%;
+      padding: 20px;
+    }
+  }
+  
+  @media only screen and (max-width: 600px) {
+    #education-experience {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .education-column,
+    .experience-column {
+      max-width: 100%;
+      margin-bottom: 20px;
+    }
+  
+    .education-details,
+    .experience-details {
+      margin-bottom: 30px;
+    }
+  }
+  @media only screen and (max-width: 600px) {
     #skills {
-        padding-left: 0px; /* Adjust the left padding as needed */
-        margin-left: 0; /* Remove the left margin */
+      padding-left: 20px; /* Adjust the padding as needed */
     }
-
+  
     .skills-big-container {
-        padding-left: 20px; /* Adjust the left padding as needed */
+      padding-left: 20px; /* Adjust the padding as needed */
     }
-}
-
+  
+    .skills-container {
+      grid-template-columns: 1fr; /* Set a single column for mobile view */
+      grid-gap: 20px; /* Adjust the gap between skills */
+    }
+  }
+  
 body {
     margin: 0;
     padding: 0;
